@@ -4,7 +4,6 @@ import numpy as np
 import os
 import joblib  # To load the trained model and scaler
 
-
 # Load your trained model and scaler
 # model_path = os.path.join(os.path.dirname(__file__), 'Credit_risk_analysis_model')  # __file__ is not defined in Streamlit
 # Use a relative path assuming the model is in the same directory as the script
@@ -30,6 +29,7 @@ loan_intent = st.sidebar.selectbox("Loan Intent", options=["PERSONAL", "EDUCATIO
 loan_grade = st.sidebar.selectbox("Loan Grade", options=["A", "B", "C", "D", "E", "F", "G"])
 loan_amnt = st.sidebar.number_input("Loan Amount", min_value=0.0, max_value=100_000.0, value=10_000.0, step=100.0)
 loan_int_rate = st.sidebar.number_input("Interest Rate (%)", min_value=0.0, max_value=100.0, value=10.0, step=0.1)
+loan_percent_income = st.sidebar.number_input("Loan to Income Ratio", min_value=0.0, max_value=1.0, value=0.1, step=0.01)
 cb_person_default_on_file = st.sidebar.selectbox("Previous Default on File", options=["Yes", "No"])
 cb_person_cred_hist_length = st.sidebar.number_input("Credit History Length (years)", min_value=0, max_value=50, value=10, step=1)
 
@@ -49,6 +49,7 @@ input_data = pd.DataFrame([{
     'loan_grade': loan_grade_map[loan_grade],
     'loan_amnt': loan_amnt,
     'loan_int_rate': loan_int_rate,
+    'loan_percent_income': loan_percent_income,
     'cb_person_default_on_file': default_on_file_map[cb_person_default_on_file],
     'cb_person_cred_hist_length': cb_person_cred_hist_length
 }])
