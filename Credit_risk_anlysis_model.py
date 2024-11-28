@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import os
 import joblib  # To load the trained model and scaler
-from sklearn.preprocessing import StandardScaler
+
 
 # Load your trained model and scaler
 # model_path = os.path.join(os.path.dirname(__file__), 'Credit_risk_analysis_model')  # __file__ is not defined in Streamlit
@@ -52,11 +52,6 @@ input_data = pd.DataFrame([{
     'cb_person_default_on_file': default_on_file_map[cb_person_default_on_file],
     'cb_person_cred_hist_length': cb_person_cred_hist_length
 }])
-
-# Normalize continuous features
-continuous_columns = ['person_age', 'person_income', 'loan_amnt', 'loan_int_rate', 'cb_person_cred_hist_length', 'person_emp_length']
-input_data[continuous_columns] = scaler.transform(input_data[continuous_columns])
-
 # Display user inputs
 st.subheader("Customer Details")
 st.write(input_data)
