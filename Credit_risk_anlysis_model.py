@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import os
 import joblib  # To load the trained model and scaler
+from sklearn.preprocessing import StandardScaler
 
 # Load your trained model and scaler
 # model_path = os.path.join(os.path.dirname(__file__), 'Credit_risk_analysis_model')  # __file__ is not defined in Streamlit
