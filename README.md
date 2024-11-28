@@ -21,11 +21,12 @@ The project also includes a user-friendly interactive web application, built wit
 ### **Objectives**
 1. **Understand Key Risk Factors**:
    - Identify financial and demographic factors that contribute to the likelihood of loan default.
+2. **Perform Exploratory Data Analysis**
    
-2. **Develop a Predictive Model**:
+3. **Develop a Predictive Model**:
    - Build a machine learning model to predict default probabilities using customer and loan attributes.
-
-3. **Answer Business Questions**:
+4  **Test and analyse the developed Model**
+5. **Answer Business Questions**:
    - **Q1**: What factors contribute to loan default?
    - **Q2**: What is the ideal loan-to-value (LTV) ratio for reducing risk across customer segments?
    - **Q3**: How can lenders maximize profitability while managing risk?
