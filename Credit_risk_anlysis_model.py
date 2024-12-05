@@ -35,7 +35,7 @@ cb_person_cred_hist_length = st.sidebar.number_input("Credit History Length (yea
 
 # Encode categorical features
 home_ownership_map = {"RENT": 0, "MORTGAGE": 1, "OWN": 2, "OTHER": 3}
-loan_intent_map = {"PERSONAL": 0, "EDUCATION": 1, "MEDICAL": 2, "VENTURE": 3, "DEBTCONSOLIDATION": 4}
+loan_intent_map = {"PERSONAL": 0, "EDUCATION": 1, "MEDICAL": 2, "VENTURE": 3, "HOME IMPROVEMENT": 4, "DEBT CONSOLIDATION":5}
 loan_grade_map = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4, "F": 5, "G": 6}
 default_on_file_map = {"Yes": 1, "No": 0}
 
