@@ -10,7 +10,6 @@ Original file is located at
 # Importing necessary libraries
 import pandas as pd #data Maipulation
 import numpy as np #numerical calculation
-import seaborn as sns #statistical Visulisation
 from sklearn.model_selection import train_test_split #splitting data for model training and testing
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
