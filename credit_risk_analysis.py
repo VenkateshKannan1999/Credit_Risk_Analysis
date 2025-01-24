@@ -317,7 +317,7 @@ print(f"Probability of Default: {new_prediction_prob[0] * 100:.2f}%")
 import joblib
 joblib.dump(model, 'Credit_risk_analysis_model')
 
-!pip install streamlit
+
 import streamlit as st
 import pandas as pd
 import numpy as np
