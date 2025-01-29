@@ -4,9 +4,7 @@ import numpy as np
 import os
 import joblib  # To load the trained model and scaler
 
-# Load your trained model and scaler
-# model_path = os.path.join(os.path.dirname(__file__), 'Credit_risk_analysis_model')  # __file__ is not defined in Streamlit
-# Use a relative path assuming the model is in the same directory as the script
+
 model_path = 'Credit_risk_analysis_model'
 model = joblib.load(model_path)
 
